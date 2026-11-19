@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Celtic Shodō Wind Odyssey — Wind Waker Archipelago &amp; Folk Brush Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>⛵ Celtic Shodō Wind Odyssey <span class="badge">Q16.16 • D–Yo Folk Bridge</span></h1>
+    <div id="hud-ensemble">Folk Ensemble: 1 / 4 Layers</div>
+  </header>
+
+  <main class="voyage-layout">
+    <section class="chart-card">
+      <div class="lore-banner">
+        <strong id="shrine-name">1. Isle of Brú &amp; Ensō</strong>
+        <div id="shrine-prompt" class="prompt">Draw a Closed Circle (Ensō / Triskele Spiral)</div>
+        <p id="shrine-lesson">Zen Ensō circles symbolize wholeness and emptiness in one breath, echoing Neolithic triple spirals carved at Brú na Bóinne (Newgrange, Co. Meath).</p>
+      </div>
+
+      <canvas id="sea-canvas" width="680" height="460"></canvas>
+
+      <div class="toolbar">
+        <button id="btn-mode">⛵ Mode: Sailing (Tap for Brush)</button>
+        <button id="btn-clear-brush">Clear Brush Ink</button>
+        <button id="btn-audio">Sound: Muted</button>
+      </div>
+    </section>
+
+    <aside class="guide-card">
+      <h3>Celestial Brush Gestures</h3>
+      <ul class="glyph-list">
+        <li><strong>〇 Closed Circle:</strong> Awakens <em>Isle of Brú &amp; Ensō</em> (Whistle + Shakuhachi).</li>
+        <li><strong>ᚁ Straight Slash:</strong> Shifts the <em>Wind Waker</em> breeze &amp; awakens <em>Ogham &amp; Kaze Ridge</em> (Harp + Koto).</li>
+        <li><strong>〰 S-Curve Wave:</strong> Awakens <em>Sean-Nós &amp; Kana Shoals</em> (Bodhrán + Taiko).</li>
+        <li><strong>✦ Two-Stroke Cross:</strong> Awakens <em>Solstice &amp; Tōrō Beacon</em> (Uilleann Drone + Bonshō Bell).</li>
+      </ul>
+
+      <h3>Voyage Receipt (SHA-256)</h3>
+      <button id="btn-receipt">Generate Voyage Receipt</button>
+      <textarea id="receipt-output" rows="6" readonly placeholder="Tap to generate SHA-256 voyage receipt..."></textarea>
+    </aside>
+  </main>
+
+  <script type="module" src="src/voyage-app.js"></script>
+</body>
+</html>
