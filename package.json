@@ -1,0 +1,10 @@
+{
+  "name": "celtic-shodo-wind-odyssey",
+  "version": "1.0.0",
+  "description": "Wind Waker-inspired archipelago sailing and Celestial Brush puzzle adventure uniting Irish Ogham/Neolithic spiral lore, Japanese Shodō calligraphy, and an additive Celtic-Japanese folk WebAudio ensemble.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/wind-voyage-kernel.test.mjs"
+  },
+  "license": "MIT"
+}
