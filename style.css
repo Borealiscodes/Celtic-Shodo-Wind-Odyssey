@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background: #082f49;
+  color: #fef3c7;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 1px solid #0369a1;
+  padding-bottom: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: normal;
+  color: #fde047;
+}
+
+.badge {
+  font-family: ui-monospace, monospace;
+  font-size: 0.72rem;
+  background: #0c4a6e;
+  color: #bae6fd;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+}
+
+#hud-ensemble {
+  font-family: ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: #fde68a;
+}
+
+.voyage-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 1rem;
+}
+
+@media (max-width: 920px) {
+  .voyage-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-card,
+.guide-card {
+  background: #0c4a6e;
+  border: 1px solid #0284c7;
+  border-radius: 10px;
+  padding: 0.85rem;
+}
+
+.lore-banner {
+  background: #082f49;
+  border-left: 3px solid #fde047;
+  padding: 0.65rem 0.85rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.lore-banner strong {
+  display: block;
+  color: #fde047;
+  font-size: 0.96rem;
+}
+
+.lore-banner .prompt {
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  color: #7dd3fc;
+  margin: 0.2rem 0 0.35rem;
+}
+
+.lore-banner p {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #f0f9ff;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #fde68a;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+button {
+  background: #082f49;
+  color: #fef3c7;
+  border: 1px solid #38bdf8;
+  border-radius: 6px;
+  padding: 0.5rem 0.72rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #fde047;
+  color: #fde047;
+}
+
+h3 {
+  font-family: system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: #bae6fd;
+  margin: 0.85rem 0 0.5rem;
+}
+
+h3:first-child {
+  margin-top: 0;
+}
+
+.glyph-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #f0f9ff;
+}
+
+.glyph-list li {
+  margin-bottom: 0.45rem;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  background: #082f49;
+  color: #fde68a;
+  border: 1px solid #38bdf8;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-family: ui-monospace, monospace;
+  font-size: 0.72rem;
+}
